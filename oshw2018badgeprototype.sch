@@ -1035,50 +1035,6 @@ F 3 "" H 4050 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L oshw2018badgeprototype-rescue:+3V3 #PWR039
-U 1 1 5B1A178C
-P 2500 5800
-F 0 "#PWR039" H 2500 5650 50  0001 C CNN
-F 1 "+3V3" H 2500 5940 50  0000 C CNN
-F 2 "" H 2500 5800 50  0001 C CNN
-F 3 "" H 2500 5800 50  0001 C CNN
-	1    2500 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L oshw2018badgeprototype-rescue:+3V3 #PWR040
-U 1 1 5B1A1839
-P 1350 5850
-F 0 "#PWR040" H 1350 5700 50  0001 C CNN
-F 1 "+3V3" H 1350 5990 50  0000 C CNN
-F 2 "" H 1350 5850 50  0001 C CNN
-F 3 "" H 1350 5850 50  0001 C CNN
-	1    1350 5850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L oshw2018badgeprototype-rescue:GND #PWR041
-U 1 1 5B1A18E6
-P 1800 5850
-F 0 "#PWR041" H 1800 5600 50  0001 C CNN
-F 1 "GND" H 1800 5700 50  0000 C CNN
-F 2 "" H 1800 5850 50  0001 C CNN
-F 3 "" H 1800 5850 50  0001 C CNN
-	1    1800 5850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L oshw2018badgeprototype-rescue:GND #PWR042
-U 1 1 5B1A1998
-P 2950 5800
-F 0 "#PWR042" H 2950 5550 50  0001 C CNN
-F 1 "GND" H 2950 5650 50  0000 C CNN
-F 2 "" H 2950 5800 50  0001 C CNN
-F 3 "" H 2950 5800 50  0001 C CNN
-	1    2950 5800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L oshw2018badgeprototype-rescue:Q_NMOS_GSD Q2
 U 1 1 5B1A8017
 P 9200 5650
@@ -1616,12 +1572,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 5450 4050 5550
 Wire Wire Line
-	2950 5800 2850 5800
-Wire Wire Line
-	1800 5850 1700 5850
-Wire Wire Line
-	1350 5850 1400 5850
-Wire Wire Line
 	4250 5650 4250 5750
 Wire Wire Line
 	8750 4450 8750 4350
@@ -1666,8 +1616,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 5150 950  5150
 Wire Wire Line
-	2550 5800 2500 5800
-Wire Wire Line
 	2600 3850 2600 4000
 Wire Wire Line
 	2900 6350 2900 6750
@@ -1682,17 +1630,6 @@ Wire Wire Line
 	9450 1500 9450 1650
 Connection ~ 9450 1650
 $Comp
-L oshw2018badgeprototype-rescue:C C16
-U 1 1 5B3F77CC
-P 8450 1800
-F 0 "C16" H 8475 1900 50  0000 L CNN
-F 1 "1uF" H 8475 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8488 1650 50  0001 C CNN
-F 3 "" H 8450 1800 50  0001 C CNN
-	1    8450 1800
-	0    1    1    0   
-$EndComp
-$Comp
 L oshw2018badgeprototype-rescue:GND #PWR064
 U 1 1 5B3F78DD
 P 8250 1800
@@ -1703,9 +1640,6 @@ F 3 "" H 8250 1800 50  0001 C CNN
 	1    8250 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8250 1800 8300 1800
-Connection ~ 8300 1800
 Wire Wire Line
 	8600 1800 9000 1800
 Wire Wire Line
@@ -1823,8 +1757,6 @@ Wire Wire Line
 Wire Wire Line
 	9450 1650 9600 1650
 Wire Wire Line
-	8300 1800 8350 1800
-Wire Wire Line
 	7300 1050 7800 1050
 Wire Notes Line
 	8550 650  8550 1600
@@ -1836,37 +1768,37 @@ Wire Notes Line
 	10750 6350 7800 6350
 Wire Notes Line
 	10750 650  8550 650 
-Text GLabel 1800 -350 0    60   Input ~ 0
+Text GLabel 6625 3900 0    60   Input ~ 0
 IO0
-Text GLabel 1800 -450 0    60   Input ~ 0
+Text GLabel 6625 3800 0    60   Input ~ 0
 RxD
-Text GLabel 1800 -550 0    60   Input ~ 0
+Text GLabel 6625 3700 0    60   Input ~ 0
 TxD
-Text GLabel 1800 -650 0    60   Input ~ 0
+Text GLabel 6625 3600 0    60   Input ~ 0
 EN
 $Comp
-L oshw2018badgeprototype-rescue:GND #PWR?
+L oshw2018badgeprototype-rescue:GND #PWR0101
 U 1 1 5B662290
-P 2650 -800
-F 0 "#PWR?" H 2650 -1050 50  0001 C CNN
-F 1 "GND" H 2650 -950 50  0000 C CNN
-F 2 "" H 2650 -800 50  0001 C CNN
-F 3 "" H 2650 -800 50  0001 C CNN
-	1    2650 -800
+P 6975 3450
+F 0 "#PWR0101" H 6975 3200 50  0001 C CNN
+F 1 "GND" H 6975 3300 50  0000 C CNN
+F 2 "" H 6975 3450 50  0001 C CNN
+F 3 "" H 6975 3450 50  0001 C CNN
+	1    6975 3450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L oshw2018badgeprototype-rescue:+3V3 #PWR?
+L oshw2018badgeprototype-rescue:+3V3 #PWR0102
 U 1 1 5B6628B9
-P 2650 -1000
-F 0 "#PWR?" H 2650 -1150 50  0001 C CNN
-F 1 "+3V3" H 2650 -860 50  0000 C CNN
-F 2 "" H 2650 -1000 50  0001 C CNN
-F 3 "" H 2650 -1000 50  0001 C CNN
-	1    2650 -1000
+P 6975 3250
+F 0 "#PWR0102" H 6975 3100 50  0001 C CNN
+F 1 "+3V3" H 6975 3390 50  0000 C CNN
+F 2 "" H 6975 3250 50  0001 C CNN
+F 3 "" H 6975 3250 50  0001 C CNN
+	1    6975 3250
 	0    1    1    0   
 $EndComp
-Text GLabel 1800 -250 0    60   Input ~ 0
+Text GLabel 6625 4000 0    60   Input ~ 0
 BAT
 Wire Wire Line
 	6650 4500 6950 4500
@@ -1877,94 +1809,112 @@ Wire Wire Line
 Wire Wire Line
 	6200 5950 6350 5950
 $Comp
-L Connector:TestPoint EN
+L Connector:TestPoint EN1
 U 1 1 5B67725A
-P 1850 -650
-F 0 "EN" V 1850 -463 50  0000 L CNN
-F 1 "TestPoint" V 1895 -462 50  0001 L CNN
-F 2 "test_point:test_point" H 2050 -650 50  0001 C CNN
-F 3 "~" H 2050 -650 50  0001 C CNN
-	1    1850 -650
+P 6675 3600
+F 0 "EN1" V 6675 3787 50  0000 L CNN
+F 1 "TestPoint" V 6720 3788 50  0001 L CNN
+F 2 "test_point:test_point" H 6875 3600 50  0001 C CNN
+F 3 "~" H 6875 3600 50  0001 C CNN
+	1    6675 3600
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TXD
+L Connector:TestPoint TXD1
 U 1 1 5B6772FE
-P 1850 -550
-F 0 "TXD" V 1850 -363 50  0000 L CNN
-F 1 "TestPoint" V 1895 -362 50  0001 L CNN
-F 2 "test_point:test_point" H 2050 -550 50  0001 C CNN
-F 3 "~" H 2050 -550 50  0001 C CNN
-	1    1850 -550
+P 6675 3700
+F 0 "TXD1" V 6675 3887 50  0000 L CNN
+F 1 "TestPoint" V 6720 3888 50  0001 L CNN
+F 2 "test_point:test_point" H 6875 3700 50  0001 C CNN
+F 3 "~" H 6875 3700 50  0001 C CNN
+	1    6675 3700
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint RXD
+L Connector:TestPoint RXD1
 U 1 1 5B67737E
-P 1850 -450
-F 0 "RXD" V 1850 -263 50  0000 L CNN
-F 1 "TestPoint" V 1895 -262 50  0001 L CNN
-F 2 "test_point:test_point" H 2050 -450 50  0001 C CNN
-F 3 "~" H 2050 -450 50  0001 C CNN
-	1    1850 -450
+P 6675 3800
+F 0 "RXD1" V 6675 3987 50  0000 L CNN
+F 1 "TestPoint" V 6720 3988 50  0001 L CNN
+F 2 "test_point:test_point" H 6875 3800 50  0001 C CNN
+F 3 "~" H 6875 3800 50  0001 C CNN
+	1    6675 3800
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint IO0
 U 1 1 5B677400
-P 1850 -350
-F 0 "IO0" V 1850 -163 50  0000 L CNN
-F 1 "TestPoint" V 1895 -162 50  0001 L CNN
-F 2 "test_point:test_point" H 2050 -350 50  0001 C CNN
-F 3 "~" H 2050 -350 50  0001 C CNN
-	1    1850 -350
+P 6675 3900
+F 0 "IO0" V 6675 4087 50  0000 L CNN
+F 1 "TestPoint" V 6720 4088 50  0001 L CNN
+F 2 "test_point:test_point" H 6875 3900 50  0001 C CNN
+F 3 "~" H 6875 3900 50  0001 C CNN
+	1    6675 3900
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint BAT
+L Connector:TestPoint BAT1
 U 1 1 5B677488
-P 1850 -250
-F 0 "BAT" V 1850 -62 50  0000 L CNN
-F 1 "TestPoint" V 1895 -62 50  0001 L CNN
-F 2 "test_point:test_point" H 2050 -250 50  0001 C CNN
-F 3 "~" H 2050 -250 50  0001 C CNN
-	1    1850 -250
+P 6675 4000
+F 0 "BAT1" V 6675 4188 50  0000 L CNN
+F 1 "TestPoint" V 6720 4188 50  0001 L CNN
+F 2 "test_point:test_point" H 6875 4000 50  0001 C CNN
+F 3 "~" H 6875 4000 50  0001 C CNN
+	1    6675 4000
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint GND
+L Connector:TestPoint GND1
 U 1 1 5B677C91
-P 2600 -800
-F 0 "GND" V 2703 -726 50  0000 C CNN
-F 1 "TestPoint" V 2645 -612 50  0001 L CNN
-F 2 "test_point:test_point" H 2800 -800 50  0001 C CNN
-F 3 "~" H 2800 -800 50  0001 C CNN
-	1    2600 -800
+P 6925 3450
+F 0 "GND1" V 7028 3524 50  0000 C CNN
+F 1 "TestPoint" V 6970 3638 50  0001 L CNN
+F 2 "test_point:test_point" H 7125 3450 50  0001 C CNN
+F 3 "~" H 7125 3450 50  0001 C CNN
+	1    6925 3450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:TestPoint 3V3
 U 1 1 5B677DC1
-P 2600 -1000
-F 0 "3V3" V 2703 -926 50  0000 C CNN
-F 1 "TestPoint" V 2645 -812 50  0001 L CNN
-F 2 "test_point:test_point" H 2800 -1000 50  0001 C CNN
-F 3 "~" H 2800 -1000 50  0001 C CNN
-	1    2600 -1000
+P 6925 3250
+F 0 "3V3" V 7028 3324 50  0000 C CNN
+F 1 "TestPoint" V 6970 3438 50  0001 L CNN
+F 2 "test_point:test_point" H 7125 3250 50  0001 C CNN
+F 3 "~" H 7125 3250 50  0001 C CNN
+	1    6925 3250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1800 -650 1850 -650
+	6625 3600 6675 3600
 Wire Wire Line
-	1850 -550 1800 -550
+	6675 3700 6625 3700
 Wire Wire Line
-	1800 -450 1850 -450
+	6625 3800 6675 3800
 Wire Wire Line
-	1850 -350 1800 -350
+	6675 3900 6625 3900
 Wire Wire Line
-	1800 -250 1850 -250
+	6625 4000 6675 4000
 Wire Wire Line
-	2600 -1000 2650 -1000
+	6925 3250 6975 3250
 Wire Wire Line
-	2650 -800 2600 -800
+	6975 3450 6925 3450
+$Comp
+L oshw2018badgeprototype-rescue:C C16
+U 1 1 5B3F77CC
+P 8450 1800
+F 0 "C16" H 8475 1900 50  0000 L CNN
+F 1 "1uF" H 8475 1700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8488 1650 50  0001 C CNN
+F 3 "" H 8450 1800 50  0001 C CNN
+	1    8450 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 1800 8300 1800
+NoConn ~ 6000 1450
+NoConn ~ 6000 1550
+NoConn ~ 6000 1650
+NoConn ~ 7300 1350
+NoConn ~ 6000 1050
 $EndSCHEMATC
